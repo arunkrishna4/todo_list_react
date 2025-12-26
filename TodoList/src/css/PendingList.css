@@ -1,0 +1,26 @@
+.pending-list {
+  width: 100%;
+  max-width: 100%;        /* your desired width */
+  height: 320px;            /* fixed box height */
+  overflow-y: auto;         /* scroll when todos overflow vertically */
+  padding: 20px;
+  margin: 30px auto;        /* center horizontally */
+  border: 2px solid #646cff;
+  background-color: wheat;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+
+
+.pending-list::-webkit-scrollbar{
+  width: 8px;
+}
+
+
+
+h2{
+    text-align: center;
+    color: black;
+}
+

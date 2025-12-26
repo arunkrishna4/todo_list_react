@@ -1,0 +1,29 @@
+.todo-card {
+    flex: 0 0 250px;      /* fixed card width, no shrinking */
+  margin: 0;
+    width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0;
+  text-align: left;
+  background-color: #f9f9f9;
+  color:black;
+}
+
+
+.deletebtn{
+    height: 40px;
+    color: white;
+    background-color: red;
+}
+
+.completedbtn{
+    height: 40px;
+    color: white;
+    background-color: green;
+}
+.button-group{
+    display: inline-flex;
+    gap: 10px;
+}

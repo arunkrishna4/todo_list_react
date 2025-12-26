@@ -1,0 +1,108 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+
+
+.addTask{
+  height: 60px;
+  background-color: aqua;
+  margin-left: 20px;
+}
+.empty-text {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.outer-container {
+  width: 1200px;  /* responsive, capped at 1200px */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+/* App.css */
+.todo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 320px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dialog label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dialog input,
+.dialog textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+
+
+@media (max-width: 600px) {
+  .todo-card {
+    flex: 1 1 100%;    /* full width card on small screens */
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .todo-card {
+    flex: 1 1 45%;     /* two cards per row on medium screens */
+  }
+}
+@media (min-width: 901px) {
+  .todo-card {
+    flex: 0 0 250px;   /* fixed width cards on large screens */
+  }
+}
